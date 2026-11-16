@@ -1,0 +1,18 @@
+BOZKURTMC WEB SİTESİ — KURULUM
+
+1) index.html dosyasını Not Defteri veya VS Code ile aç.
+2) Dosyanın en altındaki <script> bölümünde:
+   const SERVER_IP = "IP_ADRESINI_BURAYA_YAZ";
+   const DISCORD_URL = "DISCORD_DAVET_LINKINI_BURAYA_YAZ";
+   satırlarını kendi bilgilerinle değiştir.
+3) Kuralları, VIP paketlerini ve örnek sıralama oyuncularını kendi sunucuna göre düzenle.
+4) Ücretsiz yayınlama:
+   - GitHub hesabı aç ve yeni bir public repository oluştur (ör. bozkurtmc-site).
+   - index.html dosyasını repository ana dizinine yükle.
+   - Settings > Pages > Deploy from a branch > main / root seç ve Save'e bas.
+   - GitHub Pages'in verdiği adresi kullan.
+
+ÖNEMLİ:
+- Bu sürüm statik bir web sitesidir; sunucunun oyuncu sayısını veya ada sıralamasını otomatik çekmez.
+- Gerçek zamanlı oyuncu/ada verisi ve çalışan online mağaza için sunucu API'si veya uygun eklenti/entegrasyon gerekir.
+- VIP satışlarında ödeme altyapısı ve mağaza sağlayıcısının kurallarına uygun hareket et.

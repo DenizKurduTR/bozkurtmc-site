@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b1c">
+  <meta name="description" content="BozkurtMC Skyblock Minecraft sunucusuna katıl!">
+  <title>BozkurtMC | Minecraft Skyblock</title>
+  <style>
+    :root{--bg:#0b0812;--panel:#151020;--panel2:#1d1530;--purple:#a855f7;--pink:#d8b4fe;--text:#f7f2ff;--muted:#b8acc9;--line:#352548}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#422064 0,transparent 48%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#0b0812dc;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:950;letter-spacing:1px;font-size:1.2rem}.brand span{color:var(--pink)}
+    .navlinks{display:flex;gap:22px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid #c084fc66;border-radius:12px;padding:12px 18px;background:linear-gradient(135deg,#9333ea,#6b21a8);color:white;font-weight:800;cursor:pointer;box-shadow:0 8px 28px #7e22ce30;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.12)}.btn.secondary{background:#ffffff09;border-color:var(--line);box-shadow:none}
+    .hero{padding:92px 0 76px;text-align:center}.eyebrow{display:inline-block;border:1px solid #c084fc55;background:#a855f71a;color:var(--pink);padding:7px 13px;border-radius:999px;font-size:.78rem;font-weight:800;letter-spacing:1.6px}
+    h1{font-size:clamp(3rem,8vw,6.3rem);line-height:.98;margin:24px 0 16px;letter-spacing:-4px}.gradient{background:linear-gradient(90deg,#fff,#d8b4fe 45%,#a855f7);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:650px;margin:0 auto 28px;color:var(--muted);font-size:1.08rem;line-height:1.7}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .server-pill{display:inline-flex;align-items:center;gap:10px;margin-top:34px;padding:12px 16px;border:1px solid var(--line);background:#100c19;border-radius:14px;color:var(--muted);font-size:.9rem}
+    .dot{width:9px;height:9px;border-radius:50%;background:#a3e635;box-shadow:0 0 14px #a3e680}
+    section{padding:58px 0}.section-head{text-align:center;margin-bottom:30px}.section-head h2{font-size:2rem;margin:0 0 9px}.section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(160deg,#1b1429,#100c19);border:1px solid var(--line);border-radius:18px;padding:23px}
+    .card h3{margin:0 0 9px}.card p{margin:0;color:var(--muted);line-height:1.65}.icon{font-size:1.6rem;margin-bottom:14px}
+    .rules{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.rule{padding:16px;border:1px solid var(--line);background:#130e1e;border-radius:13px;color:var(--muted)}.rule b{color:white;margin-right:8px}
+    .rank{display:flex;justify-content:space-between;align-items:center;padding:15px 17px;background:#130e1e;border:1px solid var(--line);border-radius:13px;margin:9px 0}.rank small{color:var(--muted)}
+    .rank-name{font-weight:800}.tag{font-size:.75rem;color:var(--pink);background:#a855f71f;border:1px solid #a855f744;padding:5px 9px;border-radius:999px}
+    .market-note{color:var(--muted);font-size:.9rem;margin-top:14px}.discord{background:linear-gradient(120deg,#26153d,#171024);border:1px solid #7041a0;border-radius:22px;padding:34px;text-align:center}
+    footer{border-top:1px solid #ffffff12;padding:26px 0;color:var(--muted);font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#241535;border:1px solid #a855f7;color:white;padding:12px 18px;border-radius:12px;transition:.25s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:760px){.navlinks{display:none}.grid{grid-template-columns:1fr}.rules{grid-template-columns:1fr}.hero{padding:70px 0 56px}h1{letter-spacing:-2px}.foot{justify-content:center;text-align:center}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#anasayfa">✦ BOZKURT<span>MC</span></a>
+  <div class="navlinks"><a href="#ozellikler">Sunucu</a><a href="#kurallar">Kurallar</a><a href="#market">Market</a><a href="#siralama">Sıralama</a></div>
+  <a class="btn secondary" href="#katil">Sunucuya Katıl</a>
+</nav></div></header>
+<main>
+  <section class="hero" id="anasayfa"><div class="wrap">
+    <span class="eyebrow">MINECRAFT SKYBLOCK DENEYİMİ</span>
+    <h1><span class="gradient">BOZKURTMC</span></h1>
+    <p class="lead">Kendi adanı kur, kaynaklarını geliştir, arkadaşlarınla birlikte yüksel ve BozkurtMC dünyasında yerini al!</p>
+    <div class="hero-actions"><a class="btn" href="#katil">⚔ Sunucuya Katıl</a><a class="btn secondary" href="#market">✦ Marketi Keşfet</a></div>
+    <div class="server-pill"><span class="dot"></span><span>Sunucu IP:</span><strong id="serverIp">IP_ADRESINI_BURAYA_YAZ</strong><button class="btn secondary" style="padding:7px 11px" onclick="copyIp()">Kopyala</button></div>
+  </div></section>
+  <section id="ozellikler"><div class="wrap"><div class="section-head"><h2>BozkurtMC'ye Hoş Geldin</h2><p>Macera, gelişim ve rekabet bir arada.</p></div>
+    <div class="grid">
+      <article class="card"><div class="icon">🏝️</div><h3>Skyblock</h3><p>Küçük bir adadan başlayıp kendi imparatorluğunu kur.</p></article>
+      <article class="card"><div class="icon">🛒</div><h3>Oyuncu Ekonomisi</h3><p>Üret, takas yap ve oyun içi ekonomide yüksel.</p></article>
+      <article class="card"><div class="icon">🏆</div><h3>Rekabet</h3><p>Ada seviyeni geliştir ve sıralamada zirveyi hedefle.</p></article>
+    </div>
+  </div></section>
+  <section id="kurallar"><div class="wrap"><div class="section-head"><h2>Sunucu Kuralları</h2><p>Herkes için adil ve keyifli bir oyun ortamı.</p></div>
+    <div class="rules">
+      <div class="rule"><b>01.</b> Oyunculara ve yetkililere saygılı davran.</div>
+      <div class="rule"><b>02.</b> Hile, exploit ve oyun açığı kullanmak yasaktır.</div>
+      <div class="rule"><b>03.</b> Küfür, hakaret ve rahatsız edici davranışlardan kaçın.</div>
+      <div class="rule"><b>04.</b> Spam ve reklam yapmak yasaktır.</div>
+      <div class="rule"><b>05.</b> Başka oyuncuların eşyalarını izinsiz alma.</div>
+      <div class="rule"><b>06.</b> Yetkililerin uyarılarına ve kararlarına uy.</div>
+    </div>
+    <p class="market-note">Not: Bunlar örnek kurallardır. Sunucunun kesin kurallarına göre bu alanı düzenle.</p>
+  </div></section>
+  <section id="market"><div class="wrap"><div class="section-head"><h2>VIP & Market</h2><p>Destek paketlerini ve ayrıcalıkları burada tanıtabilirsin.</p></div>
+    <div class="grid">
+      <article class="card"><div class="icon">⭐</div><h3>VIP</h3><p>VIP paketinin özelliklerini ve fiyatını buraya ekle.</p><p style="margin-top:16px"><span class="tag">FİYAT EKLE</span></p></article>
+      <article class="card"><div class="icon">💎</div><h3>ELmas VIP</h3><p>Bu paketin ayrıcalıklarını ve fiyatını buraya ekle.</p><p style="margin-top:16px"><span class="tag">FİYAT EKLE</span></p></article>
+      <article class="card"><div class="icon">👑</div><h3>Kurucu Destek</h3><p>Özel destek paketinin bilgilerini buraya ekle.</p><p style="margin-top:16px"><span class="tag">FİYAT EKLE</span></p></article>
+    </div>
+    <p class="market-note">Satın alma bağlantısı henüz eklenmedi. Kendi mağaza bağlantını HTML dosyasında bu bölüme ekleyebilirsin.</p>
+  </div></section>
+  <section id="siralama"><div class="wrap"><div class="section-head"><h2>Oyuncu Sıralaması</h2><p>Örnek liste — gerçek ada verileri otomatik bağlı değildir.</p></div>
+    <div style="max-width:680px;margin:auto">
+      <div class="rank"><span><span class="tag">#1</span> <span class="rank-name">OyuncuAdı1</span></span><small>10.000 ada seviyesi</small></div>
+      <div class="rank"><span><span class="tag">#2</span> <span class="rank-name">OyuncuAdı2</span></span><small>8.500 ada seviyesi</small></div>
+      <div class="rank"><span><span class="tag">#3</span> <span class="rank-name">OyuncuAdı3</span></span><small>7.200 ada seviyesi</small></div>
+    </div>
+  </div></section>
+  <section id="katil"><div class="wrap"><div class="discord"><span class="eyebrow">TOPLULUĞA KATIL</span><h2 style="font-size:2rem;margin:18px 0 10px">BozkurtMC'de yerini al!</h2><p class="lead" style="margin-bottom:22px">Sunucuya katıl, arkadaşlarınla oyna ve topluluğumuza dahil ol.</p>
+    <div class="hero-actions"><button class="btn" onclick="copyIp()">IP Adresini Kopyala</button><a class="btn secondary" id="discordLink" href="DISCORD_DAVET_LINKINI_BURAYA_YAZ" target="_blank" rel="noopener">Discord'a Katıl</a></div>
+  </div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> BozkurtMC. Tüm hakları saklıdır.</span><span>BozkurtMC topluluğu tarafından hazırlanmıştır.</span></div></footer>
+<div class="toast" id="toast">Sunucu IP adresi kopyalandı!</div>
+<script>
+  // KURULUM: Aşağıdaki iki değeri kendi bilgilerinle değiştir.
+  const SERVER_IP = "IP_ADRESINI_BURAYA_YAZ";
+  const DISCORD_URL = "DISCORD_DAVET_LINKINI_BURAYA_YAZ";
+  document.getElementById("serverIp").textContent = SERVER_IP;
+  document.getElementById("discordLink").href = DISCORD_URL;
+  document.getElementById("year").textContent = new Date().getFullYear();
+  function copyIp(){
+    if(SERVER_IP === "IP_ADRESINI_BURAYA_YAZ"){showToast("Önce site dosyasına sunucu IP adresini ekle.");return;}
+    navigator.clipboard.writeText(SERVER_IP).then(()=>showToast("Sunucu IP adresi kopyalandı!")).catch(()=>showToast("IP: "+SERVER_IP));
+  }
+  function showToast(message){const t=document.getElementById("toast");t.textContent=message;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),2600);}
+</script>
+</body>
+</html>
